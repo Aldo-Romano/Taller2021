@@ -100,7 +100,7 @@ namespace ClassAccesoDatos
             return contenedor;
         }
 
-        /* public Boolean MultiplesConsultasDS(string querySQL, SqlConnection conexAbierta, ref string msj)
+         public Boolean MultiplesConsultasDS(string querySQL, SqlConnection conexAbierta, ref string msj, DataSet dataset1,string nomConsulta)
          {
              SqlCommand carrito = null;
              SqlDataAdapter trailer = null;
@@ -122,7 +122,7 @@ namespace ClassAccesoDatos
 
                  try
                  {
-                    // trailer.Fill(dataset1, nomConsulta);
+                     trailer.Fill(dataset1, nomConsulta);
                      msj = "Consulta correcta en DataSet";
                      salida = true;
                  }
@@ -134,7 +134,7 @@ namespace ClassAccesoDatos
                  conexAbierta.Dispose();
              }
              return salida;
-         }*/
+         }
 
         public Boolean ModificaBDMasSegura(string SentenciaSql, SqlConnection conexAbierto, ref string msj, SqlParameter[] parametros)
         {
