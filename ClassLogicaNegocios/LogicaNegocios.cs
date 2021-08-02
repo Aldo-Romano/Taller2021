@@ -15,7 +15,7 @@ namespace ClassLogicaNegocios
     public class LogicaNegocios
     {
         //Cadena de Conexión.
-        private AccesoDatos obAcc = new AccesoDatos(@"Data Source=LAPTOP-C63MHBI1\SQLEXPRESS2017; Initial Catalog=MiTaller2021; Integrated Security = true;");
+        private AccesoDatos obAcc = new AccesoDatos(@"Data Source=LAPTOP-99LGH8E7\SQLEXPRESS; Initial Catalog=MiTaller2021; Integrated Security = true;");
 
         //Insertar Marca.
         public Boolean InsertarMarca(Marcas nuevaMarca, ref string msjSalida)
