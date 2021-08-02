@@ -16,82 +16,70 @@ namespace ClassLogicaNegocios
        //Cadena de Conexión.
         private AccesoDatos obAcc = new AccesoDatos(@"Data Source=LAPTOP-C63MHBI1\SQLEXPRESS2017; Initial Catalog=MiTaller2021; Integrated Security = true;");
 
-        //Insertar Clientes.
-        public Boolean InsertarClientes(Clientes nuevoCliente, ref string msjSalida )
+        //Insertar Revisiones.
+        public Boolean InsertarRevisiones(Revisiones nuevaRev, ref string msjSalida )
         {
             SqlParameter[] param1 = new SqlParameter[7];
             param1[0] = new SqlParameter
             {
-                ParameterName = "idClien",
+                ParameterName = "idRev",
                 SqlDbType = SqlDbType.Int,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.id_cliente
+                Value = nuevaRev.id_Revision
 
             };
             param1[1] = new SqlParameter
             {
-                ParameterName = "nom",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 90,
+                ParameterName = "Entrada",
+                SqlDbType = SqlDbType.DateTime,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.nombre
+                Value = nuevaRev.Entrada
 
             };
             param1[2] = new SqlParameter
             {
-                ParameterName = "app",
+                ParameterName = "Falla",
                 SqlDbType = SqlDbType.VarChar,
-                Size = 90,
+                Size = 300,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.app
+                Value = nuevaRev.Falla
 
             };
             param1[3] = new SqlParameter
             {
-                ParameterName = "apm",
+                ParameterName = "Dignostico",
                 SqlDbType = SqlDbType.VarChar,
-                Size = 90,
+                Size = 350,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.apm
+                Value = nuevaRev.diagnostico
 
             };
             param1[4] = new SqlParameter
             {
-                ParameterName = "cel",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 20,
+                ParameterName = "Autorizacion",
+                SqlDbType = SqlDbType.Bit,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.celular
+                Value = nuevaRev.Autorizacion
 
             };
             param1[5] = new SqlParameter
             {
-                ParameterName = "telO",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 20,
+                ParameterName = "Auto",
+                SqlDbType = SqlDbType.Int,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.telOficina
+                Value = nuevaRev.Auto
 
             };
             param1[6] = new SqlParameter
             {
-                ParameterName = "correoP",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 120,
+                ParameterName = "Mecanico",
+                SqlDbType = SqlDbType.Int,
                 Direction = ParameterDirection.Input,
-                Value = nuevoCliente.correoPer
+                Value = nuevaRev.Mecanico
 
             };
-            param1[7] = new SqlParameter
-            {
-                ParameterName = "correoC",
-                SqlDbType = SqlDbType.VarChar,
-                Size = 120,
-                Direction = ParameterDirection.Input,
-                Value = nuevoCliente.correoCorp
-
-            };
-            string sentenciaSql = "insert into Cliente values(@nom,@nom,@app,@apm,@cel,@telO,@correoP,@correoC);";
+            
+            string sentenciaSql = "insert into Revision values(@idRev,@Entrada,@Falla,@Diagnostico,@Autorizacion,@Auto,@Mecanico);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql,obAcc.AbrirConexion(ref msjSalida),ref msjSalida, param1);
@@ -99,72 +87,66 @@ namespace ClassLogicaNegocios
             return salida;
         }
 
-        //Insertar Autos.
-        public Boolean InsertarAutos(Autos nuevoAuto, ref string msjSalida)
+        //Insertar Mecanico.
+        public Boolean InsertarMecanico(Mecanicos nuevoMec, ref string msjSalida)
         {
             SqlParameter[] param1 = new SqlParameter[6];
             param1[0] = new SqlParameter
             {
-                ParameterName = "idAut",
+                ParameterName = "idTec",
                 SqlDbType = SqlDbType.Int,
                 Direction = ParameterDirection.Input,
-                Value = nuevoAuto.id_Auto
+                Value = nuevoMec.id_Tecnico
 
             };
             param1[1] = new SqlParameter
             {
-                ParameterName = "marc",
-                SqlDbType = SqlDbType.Int,
+                ParameterName = "Nombre",
+                SqlDbType = SqlDbType.VarChar,
+                Size = 120,
                 Direction = ParameterDirection.Input,
-                Value = nuevoAuto.f_marca
+                Value = nuevoMec.Nombre
 
             };
             param1[2] = new SqlParameter
             {
-                ParameterName = "model",
+                ParameterName = "App",
                 SqlDbType = SqlDbType.VarChar,
                 Size = 100,
                 Direction = ParameterDirection.Input,
-                Value = nuevoAuto.modelo
+                Value = nuevoMec.App
 
             };
             param1[3] = new SqlParameter
             {
-                ParameterName = "anio",
+                ParameterName = "Apm",
                 SqlDbType = SqlDbType.VarChar,
-                Size = 4,
+                Size = 100,
                 Direction = ParameterDirection.Input,
-                Value = nuevoAuto.año
+                Value = nuevoMec.Apm
 
             };
             param1[4] = new SqlParameter
             {
-                ParameterName = "color",
+                ParameterName = "Cel",
                 SqlDbType = SqlDbType.VarChar,
-                Size = 50,
+                Size = 20,
                 Direction = ParameterDirection.Input,
-                Value = nuevoAuto.color
+                Value = nuevoMec.Celular
 
             };
             param1[5] = new SqlParameter
             {
-                ParameterName = "plac",
+                ParameterName = "Correo",
                 SqlDbType = SqlDbType.VarChar,
-                Size = 16,
+                Size = 120,
                 Direction = ParameterDirection.Input,
-                Value = nuevoAuto.placas
+                Value = nuevoMec.Correo
 
             };
-            param1[6] = new SqlParameter
-            {
-                ParameterName = "duen",
-                SqlDbType = SqlDbType.Int,
-                Direction = ParameterDirection.Input,
-                Value = nuevoAuto.dueño
-
-            };
+            
           
-            string sentenciaSql = "insert into Auto values(@idAut,@marc,@model,@anio,@color,@plac,@duen);";
+            string sentenciaSql = "insert into Mecanico values(@idTec,@Nombre,@App,@Apm,@Cel,@Correo);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql, obAcc.AbrirConexion(ref msjSalida), ref msjSalida, param1);
@@ -172,32 +154,31 @@ namespace ClassLogicaNegocios
             return salida;
         }
 
-        //Mostrar/Devolver Clientes.
-        public List<Clientes> DevuelveClientesID(ref string msj)
+        //Mostrar/Devolver Revisiones.
+        public List<Revisiones> DevuelveRevisionID(ref string msj)
         {
             SqlConnection conextemp = null;
-            string query = "select * from Cliente";
+            string query = "select * from Revision";
 
             conextemp = obAcc.AbrirConexion(ref msj);
 
             SqlDataReader datos = null;
             datos = obAcc.ConsultaReader(query, conextemp, ref msj);
 
-            List<Clientes> listaSalida = new List<Clientes>();
+            List<Revisiones> listaSalida = new List<Revisiones>();
             if(datos != null)
             {
                 while(datos.Read())
                 {
-                    listaSalida.Add(new Clientes
+                    listaSalida.Add(new Revisiones
                     {
-                        id_cliente = (int)datos[0],
-                        nombre = (string)datos[1],
-                        app = (string)datos[2],
-                        apm = (string)datos[3],
-                        celular = (string)datos[4],
-                        telOficina = (string)datos[5],
-                        correoPer = (string)datos[6],
-                        correoCorp = (string)datos[7]
+                        id_Revision = (int)datos[0],
+                        Entrada = (DateTime)datos[1],
+                        Falla = (string)datos[2],
+                        diagnostico = (string)datos[3],
+                        Autorizacion = (byte)datos[4],
+                        Auto = (int)datos[5],
+                        Mecanico = (int)datos[6]
 
                     }
                      );
@@ -214,31 +195,30 @@ namespace ClassLogicaNegocios
             return listaSalida;
 
         }
-        //Mostrar/Devolver Autos.
-        public List<Autos> DevuelveAutosID(ref string msj)
+
+        public List<Mecanicos> DevuelveMecanicoID(ref string msj)
         {
             SqlConnection conextemp = null;
-            string query = "select * from Auto";
+            string query = "select * from Mecanico";
 
             conextemp = obAcc.AbrirConexion(ref msj);
 
             SqlDataReader datos = null;
             datos = obAcc.ConsultaReader(query, conextemp, ref msj);
 
-            List<Autos> listaSalida = new List<Autos>();
+            List<Mecanicos> listaSalida = new List<Mecanicos>();
             if (datos != null)
             {
                 while (datos.Read())
                 {
-                    listaSalida.Add(new Autos
+                    listaSalida.Add(new Mecanicos
                     {
-                        id_Auto = (int)datos[0],
-                        f_marca = (int)datos[1],
-                        modelo = (string)datos[2],
-                        año = (string)datos[3],
-                        color = (string)datos[4],
-                        placas = (string)datos[5],
-                        dueño = (int)datos[6]
+                        id_Tecnico = (int)datos[0],
+                        Nombre = (string)datos[1],
+                        App = (string)datos[2],
+                        Apm = (string)datos[3],
+                        Celular = (string)datos[4],
+                        Correo = (string)datos[5]
 
                     }
                      );
@@ -255,5 +235,6 @@ namespace ClassLogicaNegocios
             return listaSalida;
 
         }
+
     }
 }
