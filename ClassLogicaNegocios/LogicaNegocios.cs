@@ -91,7 +91,7 @@ namespace ClassLogicaNegocios
                 Value = nuevoCliente.correoCorp
 
             };
-            string sentenciaSql = "insert into Cliente values(@nom,@nom,@app,@apm,@cel,@telO,@correoP,@correoC);";
+            string sentenciaSql = "insert into Cliente values(@idClien,@nom,@app,@apm,@cel,@telO,@correoP,@correoC);";
 
             Boolean salida = false;
             salida = obAcc.ModificaBDMasSegura(sentenciaSql,obAcc.AbrirConexion(ref msjSalida),ref msjSalida, param1);
