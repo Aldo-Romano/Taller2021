@@ -4,3 +4,9 @@ F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\Cla
 F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csproj.CoreCompileInputs.cache
 F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.dll
 F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\01 Repositorio\taller2021\Taller2021\ClassEntidades\bin\Debug\ClassEntidades.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\01 Repositorio\taller2021\Taller2021\ClassEntidades\bin\Debug\ClassEntidades.pdb
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\01 Repositorio\taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csprojAssemblyReference.cache
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\01 Repositorio\taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csproj.CoreCompileInputs.cache
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\01 Repositorio\taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.dll
+C:\Users\hjh\Documents\UNIVERSIDAD\9o Cuatri\web\01 Repositorio\taller2021\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.pdb
