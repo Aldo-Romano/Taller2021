@@ -1,0 +1,6 @@
+F:\Taller2021\P2\Taller2021\ClassEntidades\bin\Debug\ClassEntidades.dll
+F:\Taller2021\P2\Taller2021\ClassEntidades\bin\Debug\ClassEntidades.pdb
+F:\Taller2021\P2\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csprojAssemblyReference.cache
+F:\Taller2021\P2\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.csproj.CoreCompileInputs.cache
+F:\Taller2021\P2\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.dll
+F:\Taller2021\P2\Taller2021\ClassEntidades\obj\Debug\ClassEntidades.pdb
