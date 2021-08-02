@@ -1,0 +1,6 @@
+F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassAccesoDatos\bin\Debug\ClassAccesoDatos.dll
+F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassAccesoDatos\bin\Debug\ClassAccesoDatos.pdb
+F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csprojAssemblyReference.cache
+F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csproj.CoreCompileInputs.cache
+F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.dll
+F:\Ingenieria\9 cuatrimestre\Desarrollo Web Integral\P2Taller2021\Taller2021\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.pdb
