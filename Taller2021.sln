@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassEntidades", "ClassEnti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPresentacion", "WebPresentacion\WebPresentacion.csproj", "{D7EE7F40-03B5-4FFE-9896-8169DF7F7C6D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMG", "IMG", "{D73387D6-A28F-4C20-9FBD-D0BBEFF8894A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\icono.png = ..\..\icono.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
