@@ -67,11 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MostrarAutos.aspx" />
+    <Content Include="MostrarClientes.aspx" />
+    <Content Include="RegistroAutos.aspx" />
     <Content Include="RegistroClientes.aspx" />
     <Content Include="Web.config" />
     <Content Include="Inicio.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MostrarAutos.aspx.cs">
+      <DependentUpon>MostrarAutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarAutos.aspx.designer.cs">
+      <DependentUpon>MostrarAutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarClientes.aspx.cs">
+      <DependentUpon>MostrarClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarClientes.aspx.designer.cs">
+      <DependentUpon>MostrarClientes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
@@ -79,6 +96,13 @@
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroAutos.aspx.cs">
+      <DependentUpon>RegistroAutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroAutos.aspx.designer.cs">
+      <DependentUpon>RegistroAutos.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistroClientes.aspx.cs">
       <DependentUpon>RegistroClientes.aspx</DependentUpon>

@@ -24,16 +24,14 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-item nav-link" href=".aspx">Registro Clientes</a>
+            <a class="nav-item nav-link" href="RegistroClientes.aspx">Registro Clientes</a>
             </div>
-            </div>
+           </div>
             </nav>
         </div>
 
          <!--Formularios-->
-        <div class="form-group">
-        <asp:Label ID="Label1" runat="server" Text="Id_Cliente:"></asp:Label>
-        <asp:TextBox ID="txtIdCliente" runat="server" class="form-control"></asp:TextBox>
+        <div class="form-group" style="width:700px; margin-left:400px; margin-top:50px;">
         <asp:Label ID="Label2" runat="server" Text="Nombre:"></asp:Label>
         <asp:TextBox ID="txtNombre" runat="server" class="form-control"></asp:TextBox>
         <asp:Label ID="Label3" runat="server" Text="Apellido paterno:"></asp:Label>
@@ -49,7 +47,11 @@
         <asp:Label ID="Label8" runat="server" Text="Correo corporativo:"></asp:Label>
         <asp:TextBox ID="txtCorreoCorp" runat="server" class="form-control"></asp:TextBox>
         </div>
-        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar."/>
+        <br />
+        <div style="margin-left:400px;">
+        <asp:Button ID="Button1" runat="server" class="btn btn-primary" Text="Registrar"/>
+        <asp:Button ID="Button2" runat="server" class="btn btn-primary" Text="Mostrar clientes"/>
+        </div>
     </form>
 </body>
 </html>

@@ -28,7 +28,7 @@
             <div class="navbar-nav">
             <a class="nav-item nav-link" href="RegistroClientes.aspx">Registro Clientes</a>
             </div>
-            </div>
+           </div>
             </nav>
         </div>
          <!--Carrusel-->
