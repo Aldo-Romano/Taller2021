@@ -255,5 +255,6 @@ namespace ClassLogicaNegocios
             return listaSalida;
 
         }
+
     }
 }
