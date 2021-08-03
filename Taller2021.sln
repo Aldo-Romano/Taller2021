@@ -13,6 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPresentacion", "WebPrese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMG", "IMG", "{D73387D6-A28F-4C20-9FBD-D0BBEFF8894A}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\1.jpg = ..\..\1.jpg
+		..\..\2.jpg = ..\..\2.jpg
+		..\..\3.jpg = ..\..\3.jpg
 		..\..\icono.png = ..\..\icono.png
 	EndProjectSection
 EndProject
